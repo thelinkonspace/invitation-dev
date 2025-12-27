@@ -163,9 +163,9 @@ body{
     --cardW: min(420px, 92vw);
 
     /* posisi form lebih naik */
-    --formLeft: 9%;
+    --formLeft: 14%;
     --formTop: 24%;   /* NAIK dari sebelumnya */
-    --formW: 75%;
+    --formW: 70%;
 
     /* field & spacing lebih kecil */
     --fieldH: 38px;
