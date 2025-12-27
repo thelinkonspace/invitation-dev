@@ -195,3 +195,13 @@ body{
   }
 }
 
+@media (max-width: 380px){
+  :root{
+    --btnH: 35px;
+  }
+  .btn{
+    font-size: 12px;
+    padding: 0 12px;       /* bikin tombol lebih pendek */
+    letter-spacing: .08em;
+  }
+}
