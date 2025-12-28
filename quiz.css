@@ -95,6 +95,61 @@ body{
   text-align: justify;
 }
 
+.card-options{
+  display:flex;
+  flex-direction:column;
+  gap: var(--gap);
+}
+
+.btn-card{
+  height: 48px;
+  width: 100%;
+  padding: 0 16px;
+
+  border-radius: 12px;
+  border:1px solid #aaa;
+  cursor:pointer;
+
+  background: #dbc9b9;
+  box-shadow: 0 8px 16px rgba(0,0,0,.12);
+
+  font: 600 18px/1 'Times New Roman', Times, serif;
+  color: rgba(70,70,70,.9);
+  text-align: left;
+}
+
+.btn-card.selected {
+  background: #a89b8a;
+  border-color: #625f5f;
+}
+
+.btn-config{
+  font-family: 'Times New Roman', Times, serif;
+  position:absolute;
+  left: 10%;
+  top: 86%;
+  width: 77%;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+.btn-config button{
+  height: 40px;
+  width: 120px;
+  padding: 0 16px;
+
+  border:0;
+  cursor:pointer;
+
+  background: #625f5f;
+  box-shadow: 0 14px 28px rgba(0,0,0,.12);
+
+  font: 600 18px/1 'Times New Roman', Times, serif;
+  letter-spacing:.12em;
+  color: #dfdcdb;
+}
+
 /* Tombol */
 .btn{
   height: var(--btnH);
@@ -116,6 +171,22 @@ body{
 
 .btn:active{
   transform: translateY(1px);
+}
+
+.btn-config button{
+  height: 40px;
+  width: 120px;
+  padding: 0 16px;
+
+  border:0;
+  cursor:pointer;
+
+  background: #625f5f;
+  box-shadow: 0 14px 28px rgba(0,0,0,.12);
+
+  font: 600 18px/1 'Times New Roman', Times, serif;
+  letter-spacing:.12em;
+  color: #dfdcdb;
 }
 
 /* BACKGROUND MOBILE */
@@ -157,6 +228,17 @@ body{
 
     font: 600 18px/1 'Times New Roman', Times, serif;
   }
+
+  .btn-card{
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .btn-config button{
+    height: 36px;
+    width: 100px;
+    font-size: 16px;
+  }
 }
 /* =====================
    HP KECIL (lebih presisi)
@@ -193,6 +275,17 @@ body{
 
     font: 600 18px/1 'Times New Roman', Times, serif;
   }
+
+  .btn-card{
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .btn-config button{
+    height: 32px;
+    width: 90px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 400px){
@@ -213,5 +306,16 @@ body{
     padding: 0 16px;
 
     font: 600 16px/1 'Times New Roman', Times, serif;
+  }
+
+  .btn-card{
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .btn-config button{
+    height: 28px;
+    width: 80px;
+    font-size: 12px;
   }
 }
