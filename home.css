@@ -24,14 +24,14 @@ body{
   overflow:hidden;
   font-family: "IBM Plex Mono", monospace;
 
-  background: url("https://i.ibb.co.com/gL6SyDCt/Website-Invitation-1.png")
+  background: url("img/bg-dekstop.png")
               center / cover no-repeat;
 }
 
 /* BACKGROUND MOBILE */
 @media (max-width: 768px){
   body{
-    background: url("https://i.ibb.co.com/v4Ks8XFJ/Background-Mobile.png")
+    background: url("img/bg-mobile.png")
                 center / cover no-repeat;
   }
 
