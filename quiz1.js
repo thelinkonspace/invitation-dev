@@ -1,5 +1,5 @@
 const popup = document.getElementById("popup");
-const form = document.getElementById("welcomeForm");
+const nextBtn = document.getElementById("nextBtn");
 
 window.addEventListener("load", () => {
   // muncul “pop up” setelah page tampil
@@ -9,20 +9,7 @@ window.addEventListener("load", () => {
   }, 120);
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const data = {
-    firstName: form.firstName.value.trim(),
-    lastName: form.lastName.value.trim(),
-    refCode: form.refCode.value.trim(),
-  };
-
-  if (!data.firstName || !data.lastName) return;
-
-  console.log("SUBMIT:", data);
-
-  // contoh: tutup popup
-  popup.classList.remove("show");
-
+nextBtn.addEventListener("click", () => {
+  // pindah ke halaman lain, misalnya questions.html
+  window.location.href = "result.html";
 });
