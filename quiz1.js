@@ -24,5 +24,5 @@ form.addEventListener("submit", (e) => {
 
   // contoh: tutup popup
   popup.classList.remove("show");
-  window.location.href = "quiz.html";
+
 });

@@ -82,12 +82,6 @@ body{
   gap: var(--gap);
 }
 
-.card-title{
-  font-size: 24px;
-  font-weight: 600;
-  color: #625f5f
-}
-
 .card-caption{
   font-size: 20px;
   color: #625f5f;
@@ -95,27 +89,53 @@ body{
   text-align: justify;
 }
 
-/* Tombol */
-.btn{
-  height: var(--btnH);
-  width: fit-content;
-  align-self: center;
-  padding: 0 34px;
-  
-  border-radius: 999px;
+.card-options{
+  display:flex;
+  flex-direction:column;
+  gap: var(--gap);
+}
+.btn-card{
+  height: 48px;
+  width: 100%;
+  padding: 0 16px;
+
+  border-radius: 12px;
+  border:1px solid #aaa;
+  cursor:pointer;
+
+  background: #dbc9b9;
+  box-shadow: 0 8px 16px rgba(0,0,0,.12);
+
+  font: 600 18px/1 'Times New Roman', Times, serif;
+  color: rgba(70,70,70,.9);
+  text-align: left;
+}
+
+.btn-config{
+  font-family: 'Times New Roman', Times, serif;
+  position:absolute;
+  left: 10%;
+  top: 83%;
+  width: 77%;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+.btn-config button{
+  height: 40px;
+  width: 120px;
+  padding: 0 16px;
+
   border:0;
   cursor:pointer;
 
-  background: #d6c1aa;
+  background: #625f5f;
   box-shadow: 0 14px 28px rgba(0,0,0,.12);
 
-  font: 600 22px/1 'Times New Roman', Times, serif;
+  font: 600 18px/1 'Times New Roman', Times, serif;
   letter-spacing:.12em;
-  color: rgba(70,70,70,.9);
-}
-
-.btn:active{
-  transform: translateY(1px);
+  color: #dfdcdb;
 }
 
 /* BACKGROUND MOBILE */
