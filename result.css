@@ -3,13 +3,13 @@
   --cardW: min(1000px, 92vw);
 
   /* posisi area form di atas frame PNG */
-  --formLeft: 15%;
-  --formTop: 28%;
-  --formW: 65%;
+  --formLeft: 12%;
+  --formTop: 20%;
+  --formW: 75%;
 
   /* ukuran field */
   --fieldH: 64px;
-  --gap: 12px;
+  /*--gap: 12px;*/
 
   /* tombol */
   --btnH: 50px;
@@ -24,7 +24,7 @@ body{
   overflow:hidden;
   font-family: "IBM Plex Mono", monospace;
 
-  background: url("https://i.ibb.co.com/gL6SyDCt/Website-Invitation-1.png")
+  background: url("img/bg-dekstop.png")
               center / cover no-repeat;
 }
 
@@ -70,7 +70,7 @@ body{
 }
 
 /* Form overlay di atas PNG */
-.card-quiz{
+.card-content{
   font-family: 'Times New Roman', Times, serif;
   position:absolute;
   left: var(--formLeft);
@@ -82,156 +82,134 @@ body{
   gap: var(--gap);
 }
 
-.card-caption{
-  font-size: 20px;
-  color: #625f5f;
-  background-color: #eeeeed;
-  text-align: justify;
+.card-title{
+  font-size: 24px;
+  font-weight: 600;
+  color: #625f5f
 }
 
-.card-options{
-  display:flex;
-  flex-direction:column;
-  gap: var(--gap);
+.result-section{
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
 }
-.btn-card{
-  height: 48px;
-  width: 100%;
-  padding: 0 16px;
 
+.result-image{
+  width: 150px;
+  height: auto;
   border-radius: 12px;
-  border:1px solid #aaa;
-  cursor:pointer;
-
-  background: #dbc9b9;
   box-shadow: 0 8px 16px rgba(0,0,0,.12);
-
-  font: 600 18px/1 'Times New Roman', Times, serif;
-  color: rgba(70,70,70,.9);
-  text-align: left;
 }
 
-.btn-config{
-  font-family: 'Times New Roman', Times, serif;
-  position:absolute;
-  left: 10%;
-  top: 83%;
-  width: 77%;
-
-  display:flex;
-  justify-content: space-between;
+.result-text{
+  font-size: 15px;
+  color: #625f5f;
+  align-self: center;
 }
 
-.btn-config button{
-  height: 40px;
-  width: 120px;
+.btn-container{
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-card{
+  height: 30px;
   padding: 0 16px;
-
-  border:0;
+  
   cursor:pointer;
 
   background: #625f5f;
-  box-shadow: 0 14px 28px rgba(0,0,0,.12);
 
-  font: 600 18px/1 'Times New Roman', Times, serif;
-  letter-spacing:.12em;
+  font: 600 15px/1 'Times New Roman', Times, serif;
   color: #dfdcdb;
+  text-align: left;
 }
 
 /* BACKGROUND MOBILE */
 @media (max-width: 768px){
   body{
-    background: url("https://i.ibb.co.com/v4Ks8XFJ/Background-Mobile.png")
+    background: url("img/bg-mobile.png")
                 center / cover no-repeat;
   }
-}
-@media (max-width: 620px){
+
   :root{
     /* card lebih kecil biar pas layar */
     --cardW: min(420px, 92vw);
 
     /* posisi form lebih naik */
-    --formLeft: 14%;
-    --formTop: 24%;   /* NAIK dari sebelumnya */
+    --formLeft: 16%;
+    --formTop: 17%;   /* NAIK dari sebelumnya */
     --formW: 70%;
 
     /* field & spacing lebih kecil */
     --fieldH: 38px;
-    --gap: 8px;
 
     /* tombol lebih kecil */
     --btnH: 30px;
   }
 
   .card-title{
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #625f5f
   }
 
-  .card-caption{
-    font-size: 15px;
+  .result-section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+    align-items: center;
+    text-align: justify;
   }
 
-  .btn{
-    height: var(--btnH);
-    padding: 0 20px;
-
-    font: 600 18px/1 'Times New Roman', Times, serif;
+  .result-image{
+    width: 90px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.12);
   }
+
+  .result-text{
+    font-size: 12px;
+    color: #625f5f;
+    align-self: center;
+  }
+
+  .btn-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-card{
+    height: 30px;
+    padding: 0 10px;
+    
+    cursor:pointer;
+
+    background: #625f5f;
+
+    font: 600 12px/1 'Times New Roman', Times, serif;
+    color: #dfdcdb;
+    text-align: left;
+  }
+}
+@media (max-width: 620px){
+  
+
+  
 }
 /* =====================
    HP KECIL (lebih presisi)
 ===================== */
 @media (max-width: 480px){
-  :root{
-    /* card lebih kecil biar pas layar */
-    --cardW: min(420px, 92vw);
-
-    /* posisi form lebih naik */
-    --formLeft: 14%;
-    --formTop: 24%;   /* NAIK dari sebelumnya */
-    --formW: 70%;
-
-    /* field & spacing lebih kecil */
-    --fieldH: 38px;
-    --gap: 8px;
-
-    /* tombol lebih kecil */
-    --btnH: 30px;
-  }
-
-  .card-title{
-    font-size: 18px;
-  }
-
-  .card-caption{
-    font-size: 15px;
-  }
-
-  .btn{
-    height: var(--btnH);
-    padding: 0 20px;
-
-    font: 600 18px/1 'Times New Roman', Times, serif;
-  }
+  
 }
 
 @media (max-width: 400px){
-  :root{
-    --btnH: 30px;
-    --gap: 4px;
-  }
-  .card-title{
-    font-size: 16px;
-  }
-
-  .card-caption{
-    font-size: 13px;
-  }
-
-  .btn{
-    height: var(--btnH);
-    padding: 0 16px;
-
-    font: 600 16px/1 'Times New Roman', Times, serif;
-  }
+  
 }
